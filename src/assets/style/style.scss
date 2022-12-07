@@ -1,0 +1,153 @@
+@import "normalize";
+@import "fonts";
+@import "variables";
+
+html, body {
+    background: $background;
+    color: $main-color;
+    font-family: 'OpenSans';
+}
+
+.container {
+    position: relative;
+    width: 754px;
+    margin: 0 auto;
+}
+
+.v-logo {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.v-transplants {
+    width: 232px;
+    height: 253px;
+    background: $background-elems;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: $radius-elems;
+}
+
+.v-transplants-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.v-transplants-filter {
+    cursor: pointer;
+    display: flex;
+    width: 232px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.v-transplants-filter:hover {
+    background: $hover-effect;
+}
+
+.v-transplants-filter__desc {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.v-filter-buttons {
+    position: absolute;
+    top: 188px;
+    left: 252px;
+    width: 502px;
+    height: 50px;
+    background: $background-elems;
+    border-radius: $radius-elems;
+    border: 1px solid #DFE5EC;
+    display: flex;
+}
+
+.button-fast button, .button-cheap button{
+    width: 251px;
+    height: 50px;
+    background: $background-elems;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.button-cheap button {
+    border-top-left-radius: $radius-elems;
+    border-bottom-left-radius: $radius-elems;
+}
+
+.button-fast button {
+    border-bottom-right-radius: $radius-elems;
+    border-top-right-radius: $radius-elems;
+}
+
+.button-fast button:hover, .button-cheap button:hover{
+    background: $color-blue;
+    color: $background-elems;
+}
+
+.v-tickets {
+    position: absolute;
+    top: 248px;
+    left: 252px;
+}
+
+.v-ticket {
+    position: relative;
+    width: 502px;
+    height: 184px;
+    background: $background-elems;
+    border-radius: $radius-elems;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.v-ticket-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.v-ticket-header__price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-blue;
+}
+
+.v-ticket-details {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.v-ticket-details__path-city, .v-ticket-details__time-way, .v-ticket-details__transplants-amout {
+    width: 140px;
+    color: $color-ticket;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.v-ticket-details__path-travel-time, .v-ticket-details__time-elapsed-time, .v-ticket-details__transplants-city {
+    width: 140px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
