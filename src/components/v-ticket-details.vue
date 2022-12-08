@@ -41,15 +41,14 @@ export default {
     },
     computed: {
         normalizeTime() {
-            let minutes = this.detail.duration
+            let minutes = this.detail.duration;
             minutes = (minutes / 60 | 0) + "ч " + minutes % 60 + "м";
-            return minutes
+            return minutes;
         },
         normalizeDate() {
             let date = new Date(this.detail.date);
-            date = date.getDate() + '-' + (date.getMonth()+1) + '-' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes()
+            date = date.getDate() + '-' + (date.getMonth()+1) + '-' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
             return date;
-
         }
     }
 }
