@@ -24,6 +24,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Project setup
-```
+
 Небольшой аналог функционала avisales
-```
+
+Данные по билетам хранятся в файле json
