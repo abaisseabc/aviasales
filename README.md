@@ -19,6 +19,8 @@ UI:
 - button-cheap.vue: кнопка фильтрации дешевых билетов
 - button-fast.vue: кнопка фильтрации быстрых билетов
 
+Остальное:
+
 - v-filters-buttons.vue: копонент, включающий в себя UI
 - v-logo.vue: компонент логотипа
 - v-tickets-details.vue: копонент деталей о билете
